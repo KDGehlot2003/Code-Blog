@@ -1,0 +1,96 @@
+body {
+    background-color: #121F26;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.viewprofile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    font-size: 20px;
+
+}
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+#image-section {
+    /* border: 2px solid black; */
+    padding: 25px;
+    background-image: url(/images/profile-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 350px;
+    margin-left: 150px;
+    padding-left: 220px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+}
+.profile {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+  }
+  
+  .name {
+    font-size: 60px; /* Large font size for the name */
+    margin-bottom: 20px; /* Space between name and badges */
+    font-weight: 500;
+  }
+  
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between badges */
+  }
+  
+  .badge {
+    background-color: #4f6d7a; /* Matching the badge background */
+    border-radius: 20px; /* Rounded corners for badges */
+    padding: 10px 20px;
+    color: black; /* Text color */
+    font-size: 18px; /* Smaller font size for badges */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); Shadow for depth */
+  }
+  .rank {
+    background-color: #6B9AC4;
+  }
+  .likes {
+    background-color: #5999B1;
+  }
+  
+  .social-sidebar {
+    margin-right: 50px;
+    position: fixed; /* Fixed position to stay in place while scrolling */
+    top: 50%; /* Center vertically */
+    right: 0; /* Align to the right side */
+    transform: translateY(-80%); /* Adjust for exact vertical centering */
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+  }
+  
+  .social-icon {
+    display: block; /* New line for each icon */
+    margin: 10px 0; /* Margin around icons */
+    background-color: #121F26; /* Icon background */
+    border-radius: 4px; /* Rounded corners for icons */
+    margin-top: 40px;
+    overflow: hidden; /* Ensures the border-radius applies to children img */
+  }
+  
+  .social-icon img {
+
+    display: block; /* Remove inline-block spacing */
+    width: 35px; /* Set a fixed width for icons */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 5px;
+  }
+  
+  /* Add additional styling as needed */
+  
