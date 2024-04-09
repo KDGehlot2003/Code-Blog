@@ -1,0 +1,210 @@
+/* Reset some basic elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121f26;
+}
+
+/* Styling the header */
+.home-header {
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding around the navbar */
+    /* position: fixed; */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #121f26;
+}
+
+/* Navigation bar layout */
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home-navbar-left,
+.home-navbar-right,
+.home-navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; /* White text for the link */
+}
+
+.home-navbar-left img,
+.home-navbar-right img {
+    max-width: 50px; /* Adjust logo and icons size */
+    height: auto;
+}
+.home-navbar-right-notification img{
+    max-width: 24px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.home-navbar-right-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.CodeBlog-Name {
+    margin-left: 10px; /* Space between logo and site name */
+    font-weight: 600; /* Semi-bold for the site name */
+}
+
+/* Navigation links */
+.home-nav-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Space between links */
+}
+
+.home-nav-links a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: 400; /* Regular font weight for links */
+}
+
+.home-nav-links a:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-navbar-center {
+        display: none; /* Hide center links on smaller screens */
+    }
+
+    .home-navbar {
+        justify-content: space-between;
+    }
+}
+
+/* Additional responsive or specific styles can go here */
+
+.home-nav-links li {
+    margin-right: 20px; /* Adds space to the right of each link */
+}
+
+.home-nav-links li:last-child {
+    margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
+}
+
+
+/* Nav Bar completed  */
+
+.home-main-content{
+    margin-top: 76.4px;
+    display: flex;
+    height: 100vh;
+}
+
+.home-main-content-blogs{
+    flex:0 0 65%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.rankings-section{
+    flex: 0 0 30%;
+    height: 100vh;
+    /* padding: ; */
+}
+
+
+/* Table  */
+
+.rankings-section{
+    text-align: center;
+    color: #fff;
+}
+.rankings-section-table-body{
+    /* background-color: #15222D; */
+    color: #fff;
+
+}
+
+.rank{
+    text-align: center;
+    margin-right: 400rem;
+}
+
+.rankings-section-table-body a{
+    text-decoration:none;
+    color: #fff;
+    /* min-width: none; */
+}
+
+.rankings-section-table{
+    /* min-width: none; */
+    width: 20rem;
+}
+
+.rankings-section img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.ranking-section-table-row a{
+    display: flex;
+    align-content: center;
+    align-content: center;
+    /* width: 100%; */
+    /* height: auto; */
+    /* width:15rem; */
+    /* height: auto; */
+}
+
+.ranking-section-table-row span{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    
+}
+.rank{
+    /* padding-right: 3rem; */
+    padding: 0 4rem;
+
+}
+
+.user-profile{
+    min-width: 20rem;
+}
+
+    /* table{
+        border-spacing: 2rem;
+    } */
+    .gap{
+    background-color: #15222D;
+    margin-bottom: 0.4rem;
+    /* padding-right: 2rem; */
+    /* min-width: 2rem; */
+}
+
