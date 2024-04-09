@@ -1,0 +1,109 @@
+/* Reset some basic elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    background-color: #121f26;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling the header */
+.home-header {
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding around the navbar */
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation bar layout */
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home-navbar-left,
+.home-navbar-right,
+.home-navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; /* White text for the link */
+}
+
+.home-navbar-left img,
+.home-navbar-right img {
+    max-width: 50px; /* Adjust logo and icons size */
+    height: auto;
+}
+.home-navbar-right-notification img{
+    max-width: 24px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.home-navbar-right-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.CodeBlog-Name {
+    margin-left: 10px; /* Space between logo and site name */
+    font-weight: 600; /* Semi-bold for the site name */
+}
+
+/* Navigation links */
+.home-nav-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Space between links */
+}
+
+.home-nav-links a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: 400; /* Regular font weight for links */
+}
+
+.home-nav-links a:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-navbar-center {
+        display: none; /* Hide center links on smaller screens */
+    }
+
+    .home-navbar {
+        justify-content: space-between;
+    }
+}
+
+/* Additional responsive or specific styles can go here */
+
+.home-nav-links li {
+    margin-right: 20px; /* Adds space to the right of each link */
+}
+
+.home-nav-links li:last-child {
+    margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
+}
