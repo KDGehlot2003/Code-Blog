@@ -70,7 +70,7 @@ body {
     position: fixed; /* Fixed position to stay in place while scrolling */
     top: 50%; /* Center vertically */
     right: 0; /* Align to the right side */
-    transform: translateY(-80%); /* Adjust for exact vertical centering */
+    transform: translateY(-70%); /* Adjust for exact vertical centering */
     padding: 10px;
     border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
   }
