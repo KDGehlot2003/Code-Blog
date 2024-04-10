@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeBlog Login</title>
+<link rel="stylesheet" href="Login.css">
+<script src="login.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="login-container">
+    <div id="login-form">
+        <div class="form-header">
+            <div class="logo">
+                <img src="Images/cb-logo-4.webp" alt="CodeBlog Logo" style="width: 40px; height: 40px;">
+                <h1>CODE-BLOG</h1>
+            </div>
+            <h2>Welcome to CodeBlog</h2>
+            <p>Let's get started!</p>
+        </div>
+        <div class="input-container">
+            <input type="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-container password-container">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+            <img src="Images/Closeeye.png" alt="Hide Password" id="eyeClosed" onclick="togglePasswordVisibility()" style="display: none; cursor: pointer;">
+            <img src="Images/Openeye.png" alt="Show Password" id="eyeOpen" onclick="togglePasswordVisibility()" style="cursor: pointer;">
+        </div>
+        <button type="submit" class="signin-btn">Sign in</button>
+        <button type="button" class="email-btn">Continue with email</button>
+        <p class="register-prompt">Don't have an account? <a href="#">Register</a></p>
+    </div>
+    <div  class="login-image">
+        <img src="Images/login7.webp" alt="Login Visual">
+    </div>
+</div>
+</body>
+</html>

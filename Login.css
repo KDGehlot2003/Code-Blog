@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+#login-container {
+    display: flex;
+    width: 100vw; 
+    height: 100vh; 
+    align-items: stretch;
+}
+
+
+#login-form {
+    flex: 1.2;
+    background-color: #121f26;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    color: #fff;
+}
+.login-image {
+    flex: 2;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.login-image img {
+    width:  55rem;
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.logo img {
+    border-radius:  30%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header h1,  .input-container, .input-container input, .input-container label, .password-container img, button, .signin-btn, .email-btn, .register-prompt, .register-prompt a {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-header h2,.form-header p{
+    margin:0px;
+}
+.form-header p{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.form-header h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Chrome, Safari, and Chromium-based browsers like Brave */
+.input-container input:-webkit-autofill,
+.input-container input:-webkit-autofill:hover, 
+.input-container input:-webkit-autofill:focus, 
+.input-container input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #121f26 inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background-color: #121f26;
+    color: #fff;
+    transition: border-color 0.3s;
+    text-align: left;
+}
+
+.input-container input:focus,
+.input-container input:not(:placeholder-shown) {
+    border-color: #ffffff;
+}
+
+.input-container label {
+    position: absolute;
+    top: 14px;
+    left: 35px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    left: 20px;
+    font-size: 12px;
+    background: #121f26;
+    padding: 0 5px;
+}
+
+.password-container img {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.signin-btn, .email-btn {
+    background-color: #345A69;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-prompt a {
+    color: #ffffff;
+}
+@media (max-width: 2000px) {
+    #login-container {
+        flex-direction: row;
+    }
+
+    .login-image img {
+        width: 100%; 
+        height: 100%;
+        max-height: none; 
+        object-fit: fill;
+    }
+}
+
+@media (max-width: 766px) {
+    .login-image {
+        display: none; 
+    }
+
+    #login-form {
+        flex: 1; 
+        width: 100%; 
+    }
+}
