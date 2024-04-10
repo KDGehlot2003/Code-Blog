@@ -1,0 +1,242 @@
+/*  
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .newsletter-section,
+    .footer-links {
+        margin-bottom: 20px;
+    }
+} */
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    background-color: #121f26;
+    font-size: 20px;
+    font-family: pop;
+}
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4rem 4rem 0rem 0rem;
+
+    margin: 0px;
+}
+.footer-main{
+    display: flex   ;
+}
+
+.footer-div1{
+    height: 290px;
+    width: 35%;
+    /* border: 2px solid red; */
+    padding: 40px;
+    padding-left: 100px;
+    /* margin: 0px 0px ; */
+    padding-bottom:0px ;
+    background-color: white;
+    border-radius: 4rem 4rem 0rem 0rem;
+
+}
+
+.footer-div2{
+    height: 290px;
+    width: 65%;
+    display: flex;
+    /* padding: 40px; */
+    /* margin-left: 50px;    */
+    border-radius: 4rem 4rem 0rem 0rem;
+    /* margin: 0px 0px; */
+    padding-bottom:0px ;
+
+    background-color: white;
+    /* border: 2px solid red; */
+    justify-content:stretch;
+
+}
+.footer-link{margin: 50px;
+}
+.footer-div2 .footer-link ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+ul{
+    padding: 0px;
+}
+.footer-div2 .footer-link ul li{
+    text-align: left;
+    /* padding-left: 10px; */
+    margin: 0px;
+    
+    
+}
+.footer-div2 .footer-link u{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.footer-div2 .footer-link ul li a{ 
+    text-decoration: none;
+    list-style: none;
+    color: #13072e  ;
+    /* text-align: center; */
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    color: #13072e;
+}
+.copyright p a{ 
+    text-decoration: none;
+    color:black
+}
+.ll{
+    margin-top: 0px;
+    border-top: 1px solid #333;
+    margin:0px 100px ;
+}
+/* .copyright #p1{
+    text-align: left;
+    
+}
+.copyright #p2{
+    text-align: right;
+} */
+/* input[type='email']{
+    font-size: 17px;
+    height: 40px;
+    width: 250px;
+    border-radius: 65px;
+    line-height: 14px;
+    padding-left: 40px;
+} */
+.subscribe-form {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 30px; /* Rounded corners for the container */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.subscribe-form input[type="email"] {
+flex: 1;
+border: none;
+background-color: white; /* Same as form background for seamless integration */
+padding: 10px 15px;
+margin-right: 5px;
+border-radius: 22px; /* Rounded corners for the input field */
+outline: none;
+font-size: 16px; /* Adjust size as needed */
+}
+
+.subscribe-form button.subscribe-button {
+background-color: #345A69;; /* The button's background color */
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 50%; /* Circular shape */
+cursor: pointer;
+outline: none;
+font-size: 16px; /* Adjust size as needed */
+width: 44px; /* Circle's width */
+height: 44px; /* Circle's height */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Adjust placeholder color for better visibility if necessary */
+.subscribe-form input::placeholder {
+color: #333;
+}
+
+/* Hover and focus states for interactivity */
+.subscribe-form input:focus,
+.subscribe-form button:hover {
+border: none;
+box-shadow: 0 0 0 2px white; /* A subtle shadow to highlight focus/hover */
+}
+
+/* Making the button's hover state a bit darker */
+.subscribe-form button:hover {
+background-color: #345A69;;
+}
+/* Existing styles */
+.footer-main {
+    flex-wrap: wrap; /* Allows child elements to wrap onto the next line as needed */
+    justify-content: center; /* Centers children when they wrap */
+    padding: 20px;
+  }
+  
+  .footer-div1,
+  .footer-div2 {
+    flex: 1 1 300px; /* Allows these divs to grow and shrink but not smaller than 300px */
+    margin: 10px; /* Adds some space between the divs */
+  }
+  
+/* Add this at the bottom of your existing CSS file */
+@media (max-width: 768px) {
+.footer-div1, .footer-div2 {
+    width: 100%; /* Full width on small screens */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-div1 {
+    order: 2; /* Makes the subscription form appear below the links on small screens */
+}
+
+.footer-div2 {
+    order: 1;
+}
+
+.subscribe-form {
+    width: auto; /* Ensures the form takes the width of its parent */
+    margin: 0 20px; /* Adds some horizontal spacing */
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+}
+
+.subscribe-form button.subscribe-button {
+    width: 44px;
+    height: 44px;
+}
+}
+
+/* Improve button text alignment, especially for non-monospaced fonts */
+.subscribe-form button.subscribe-button {
+font-family: 'Poppins', sans-serif; /* Ensures the font matches the rest of the site */
+display: inline-flex; /* Uses flexbox for centering */
+align-items: center;
+justify-content: center;
+}
+
+/* Fix the link to Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Adjust input and button padding for better touch target sizes */
+.subscribe-form input[type="email"],
+.subscribe-form button.subscribe-button {
+padding: 15px; /* Increased padding for a larger touch target */
+}
+
+/* Ensure the input and button text scales correctly on small screens */
+@media (max-width: 480px) {
+.subscribe-form input[type="email"],
+.subscribe-form button.subscribe-button {
+    font-size: 14px; /* Smaller font size on very small screens */
+}
+}
