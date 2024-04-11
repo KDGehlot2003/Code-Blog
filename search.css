@@ -3,12 +3,12 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    background-color: #121f26;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    background-color: #121f26;
 }
 
 /* Styling the header */
@@ -107,3 +107,73 @@ body {
 .home-nav-links li:last-child {
     margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
 }
+
+
+/* main section */
+.search-main-content {
+    margin-top: 76.4px;
+    display: flex;
+    height: 100vh;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* search bar  */
+.search-bar {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 30px; /* Rounded corners for the container */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 5px;
+    width: 500px; /* Adjust width as needed */
+}
+
+
+.search-bar input[type="search"] {
+    flex: 1;
+    border: none;
+    background-color: white; /* Same as form background for seamless integration */
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 22px; /* Rounded corners for the input field */
+    outline: none;
+    font-size: 16px; /* Adjust size as needed */
+    }
+    
+    .search-bar button.search-button {
+    background-color: #345A69;; /* The button's background color */
+    /* color: white; */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    outline: none;
+    /* font-size: 16px; Adjust size as needed */
+    width: 44px; /* Circle's width */
+    height: 44px; /* Circle's height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .search-bar button.search-button img{
+        /* width: 100%; */
+        height: 100%;
+    }
+    
+    /* Adjust placeholder color for better visibility if necessary */
+    .search-bar input::placeholder {
+    color: #333;
+    }
+    
+    /* Hover and focus states for interactivity */
+    .search-bar input:focus,
+    .search-bar button:hover {
+    border: none;
+    box-shadow: 0 0 0 2px white; /* A subtle shadow to highlight focus/hover */
+    }
+    
+    /* Making the button's hover state a bit darker */
+    .search-bar button:hover {
+    background-color: #345A69;;
+    }
