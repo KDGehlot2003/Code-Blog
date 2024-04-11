@@ -8,19 +8,52 @@
 body{
     background-color: #121f26;
 }
+
 .clip-path-container {
     width: 100px; 
     height: 100px; 
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
+.content-flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 80px; 
+    gap: 20px; 
+}
+.clip-path-image {
+    margin: 0 20px; 
+    width: 450px;
+    height: 450px;
+    border-radius: 100% 54% 30% 100% / 11% 22% 78% 100%;
+}
+.info{
+    text-align: left;
+    margin-top:100px ;
+    margin-left:80px ;
+    background: #121f26;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; 
+}
+
+.info p{
+    color: #ffffff;
+    padding-bottom: 70px;
+}
+
 
 nav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
     padding: 10px 20px;
     background-color: #121f26;
+    position: fixed; /* Fix navbar to the top of the viewport */
+    top: 0; /* Position at the very top */
+    z-index: 1000; /* Ensure navbar is above other content */
 }
 
 .logo {
@@ -66,7 +99,7 @@ border-radius: 100% 54% 30% 100% / 11% 22% 78% 100%  ;
 }
 .index-main-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .info{
@@ -95,7 +128,7 @@ h1 {
     margin-top: 10px;
 }
 
-p {
+.p {
     color: #ffffff;
     line-height: 1.5;
     font-size: 16px;
@@ -104,13 +137,14 @@ p {
 
 .buttons-container {
     display: flex;
-    width:180px;
+    width:200px;
     height: 50px;
     justify-content: space-evenly; 
     align-items: center; 
     background-color: #5999B1;
     border-radius: 3rem; 
-    padding: 0.3rem; 
+    padding: 0.5rem; 
+
 }
 
 .explore-button, .subscribe-button {
@@ -133,3 +167,66 @@ p {
     border-radius: 50%; 
 }
 
+section{
+   height: 100vh;
+}
+.card-index{
+    margin-left: 12rem ;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem  ;
+    
+}
+.card-image{
+    border-radius: 1rem;
+    background-color: #224452;
+    position: relative;
+    margin: 1rem;
+    border: #ffffff  solid 1px;
+    height:  16.341rem;
+    
+
+}
+.card-image img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 8.5rem;
+    width: 12.9rem;
+}
+.topic-name{
+    color: #ffffff;
+    padding: 0.5rem;
+
+}
+.p-blog{
+    color: #ffffff;
+    margin-left: 5rem;
+    font-size: 28.1px;
+    font-weight: 600;
+}
+.explore-btn button{
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    width: 70px;
+    background-color: #5999B1;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+   
+
+}
+.explore-btn{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    width: 65px;
+    margin: 0.4rem ;
+    border-radius: 5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0rem 0.9rem 0.6rem 0rem; 
+   
+}
+.explore-btn:hover {
+    background-color: #487a8c; 
+}
