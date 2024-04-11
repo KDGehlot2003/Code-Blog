@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #121F26;
     color: white;
 }
@@ -13,87 +13,92 @@ body{
     justify-content: left;
     align-items: center;
 }
+
 .logo img {
-    border-radius:  30%;
+    border-radius: 30%;
     margin-right: 10px;
+}
+
+.logo h1 {
     margin-bottom: 20px;
 }
-.logo h1{
-    margin-bottom: 40px;
+
+.signup-heading h2, .signup-heading p {
+    text-align: center;
 }
 
-.signup-heading h2,p{
+.signup-form-input {
     display: flex;
     justify-content: center;
-    
-}
-.signup-form-input{
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-.signup-form-input .input-column1{
-    width: 400px;
-    margin: 10px;
-    margin-right: 40px;
+.input-column1, .input-column2 {
     background-color: #121F26;
+    padding: 20px;
 }
 
-.signup-form-input .input-column2{
-    width: 400px;
-    margin: 10px;
-    margin-left: 40px;
-    background-color: #121F26;
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .input-container input {
     width: 100%;
-    padding: 10px 10px 10px 35px;
+    padding: 15px;
+    padding-right: 45px; /* Adjust for eye icon */
     border: 2px solid #ffffff;
     border-radius: 4px;
-    outline: none;
-    font-size: 16px;
     background-color: #121f26;
-    color: #fff;
-    transition: border-color 0.3s;
-    text-align: left;
+    color: white;
+    font-size: 16px;
+    outline: none;
 }
-
-.password-container img {
-    /* position: absolute; */
-    right: 10px;
-    top: 35%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
 
 .input-container label {
-    /* position: absolute; */
-    top: 14px;
-    left: 35px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
     transition: all 0.3s ease;
-    color: #ffffff;
     pointer-events: none;
 }
 
-.input-column2-upper{
+/* Adjust label when input is focused or not empty */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #4d9f0c; /* Change as per design */
+}
+
+
+
+/* Floating label effect - when the user interacts with the input */
+.input-container input:valid + label,
+.input-container input:focus + label {
+    top: -20px; /* Adjust to suit */
+    color: #fff; /* Adjust if needed */
+    font-size: 12px; /* Smaller font for floating label */
+}
+
+.input-column2-upper {
     display: flex;
     flex-direction: column;
 }
 
-.input-column2-lower{
+.input-column2-lower {
     margin-top: 70px;
 }
-.signup-form-button{
+
+.signup-form-button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
+
 .signin-btn, .email-btn {
     margin: 20px 0px 10px 0px;
     background-color: #345A69;
@@ -103,5 +108,5 @@ body{
     border-radius: 2rem;
     font-size: 16px;
     cursor: pointer;
-    width: 400px; 
+    width: 400px;
 }
