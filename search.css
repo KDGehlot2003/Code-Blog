@@ -21,6 +21,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    background-color: #121f26;
 }
 
 /* Navigation bar layout */
@@ -120,6 +121,7 @@ body {
 
 /* search bar  */
 .search-bar {
+    margin: 0 auto;
     display: flex;
     border: 1px solid black;
     align-items: center;
@@ -177,3 +179,69 @@ body {
     .search-bar button:hover {
     background-color: #345A69;;
     }
+
+
+    .card-index{
+        /* margin-left: 8rem ; */
+        /* margin: 0 auto; */
+        display: grid;
+        grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
+        /* margin: 0 auto; */
+        /* margin-left:rem */
+        
+    }
+    .card-image{
+        border-radius: 1rem;
+        background-color: #224452;
+        position: relative;
+        margin: 1rem;
+        border: #ffffff  solid 1px;
+        height:  16.341rem;
+        
+    
+    }
+    .card-image img{
+        border-radius: 1rem 1rem 0rem 0rem;
+        height: 8.5rem;
+        width: 12.9rem;
+    }
+    .topic-name{
+        color: #ffffff;
+        padding: 0.5rem;
+    
+    }
+    .p-blog{
+        color: #ffffff;
+        margin-left: 5rem;
+        font-size: 28.1px;
+        font-weight: 600;
+    }
+    .explore-btn button{
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        width: 70px;
+        background-color: #5999B1;
+        padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+        cursor: pointer;
+        border-radius: 1rem;
+       
+    
+    }
+    .explore-btn{
+        color: #ffffff;
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
+        width: 65px;
+        margin: 0.4rem ;
+        border-radius: 5rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin: 0rem 0.9rem 0.6rem 0rem; 
+       
+    }
+    .explore-btn:hover {
+        background-color: #487a8c; 
+    }
+    
