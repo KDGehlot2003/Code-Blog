@@ -56,7 +56,8 @@ footer{
     justify-content:stretch;
 
 }
-.footer-link{margin: 50px;
+.footer-link{
+    margin: 50px;
 }
 .footer-div2 .footer-link ul li{
     text-decoration: none;
