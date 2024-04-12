@@ -2,10 +2,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body, html {
-    overflow-y: auto; 
-    height: 100%; 
-}
+
 
 body {
     background-color: #121F26;
