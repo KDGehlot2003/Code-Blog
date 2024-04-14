@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    color: #fff; /* White text color */
 }
 
 /* Styling the header */
@@ -87,16 +88,6 @@ body {
     color: #ccc; /* Lighter color on hover */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .home-navbar-center {
-        display: none; /* Hide center links on smaller screens */
-    }
-
-    .home-navbar {
-        justify-content: space-between;
-    }
-}
 
 /* Additional responsive or specific styles can go here */
 
@@ -109,97 +100,194 @@ body {
 }
 
 .viewprofile {
-    margin-left: 40px;
-    color: white;
+    /* margin-left: 40px; */
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin: 80px 0px 0px 40px;
     font-size: 20px;
-
+    
+    
 }
 .profile-section {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     font-size: 20px;
-
+    justify-content: space-between;
+    
 }
 
 #image-section {
     /* border: 2px solid black; */
-    padding: 25px;
+    width: 300px;
+    height: 300px;
     background-image: url(/images/profile-photo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     border-radius: 20px;
-    margin-right: 350px;
-    margin-left: 150px;
-    padding-left: 220px;
-    padding-right: 100px;
-    padding-bottom: 300px;
+    margin-left: 60px;
+    
 }
 .profile {
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     margin-top: 60px;
-  }
-  
-  .name {
+}
+
+.name {
     font-size: 60px; /* Large font size for the name */
     margin-bottom: 20px; /* Space between name and badges */
     font-weight: 500;
-  }
-  
-  .badges {
+}
+
+.badges {
     display: flex;
     justify-content: center;
     gap: 10px; /* Space between badges */
-  }
-  
-  .badge {
-    background-color: #4f6d7a; /* Matching the badge background */
-    border-radius: 20px; /* Rounded corners for badges */
+}
+
+.badge {
+    /* background-color: #4f6d7a; Matching the badge background */
+    border-radius: 25px; /* Rounded corners for badges */
     padding: 10px 20px;
     color: black; /* Text color */
     font-size: 18px; /* Smaller font size for badges */
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); Shadow for depth */
-  }
-  .rank {
-    border-radius: 25px;
+}
+.rank {
     background-color: #6B9AC4;
-  }
-  .likes {
-    border-radius: 25px;
+}
+.likes {
     background-color: #5999B1;
-  }
-  
-  .social-sidebar {
-    margin-right: 50px;
-    position: fixed; /* Fixed position to stay in place while scrolling */
-    top: 50%; /* Center vertically */
-    right: 0; /* Align to the right side */
-    transform: translateY(-70%); /* Adjust for exact vertical centering */
-    padding: 10px;
+}
+
+.social-sidebar {
+    margin: 0px 30px 0px 0px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-  }
-  
-  .social-icon {
-    display: block; /* New line for each icon */
-    margin: 10px 0; /* Margin around icons */
+}
+
+.social-icon {
+    display: flex; /* New line for each icon */
     background-color: #121F26; /* Icon background */
     border-radius: 4px; /* Rounded corners for icons */
-    margin-top: 40px;
     overflow: hidden; /* Ensures the border-radius applies to children img */
-  }
-  
-  .social-icon img {
+}
 
+.social-icon img {
+    
     display: block; /* Remove inline-block spacing */
     width: 35px; /* Set a fixed width for icons */
     height: auto; /* Keep the aspect ratio */
     border-radius: 5px;
-  }
-  
-  /* Add additional styling as needed */
-  
+}
+
+/* Add additional styling as needed */
+
+
+.blogs-section {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #224452;
+    width: 250px; /* Adjust the width as necessary */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 70px;
+    /* background: #fff; */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    scale: 1.1;
+}
+
+.card-header {
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #224452;
+}
+
+.card-header img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    border-radius: 10px;
+    background-color: #224452;
+    padding: 1px 16px;
+}
+
+.card-body h3 {
+    background-color: #224452;
+    margin: 16px 0;
+}
+.ex-btn {
+    background-color: #224452;
+    display: flex;
+    justify-content: end;
+}
+
+.card-body button {
+    background-color: #5999B1;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.card-body button:hover {
+    color: white;
+    background: #6B9AC4;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 95%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-navbar-center {
+        display: none; /* Hide center links on smaller screens */
+    }
+
+    .home-navbar {
+        justify-content: space-between;
+    }
+
+    .profile-section {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .blogs-section {
+        flex-direction: column;
+    }
+    .social-sidebar {
+        display: none;
+    }
+
+}
