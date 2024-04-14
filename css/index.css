@@ -217,3 +217,7 @@ section {
 .explore-btn:hover {
     background-color: #487a8c;
 }
+.buttons-container a , .auth-buttons a{
+    text-decoration: none;
+    color:#fff;
+}
