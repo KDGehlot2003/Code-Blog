@@ -101,7 +101,7 @@ html, body {
 
 .input-container input:focus,
 .input-container input:not(:placeholder-shown) {
-    border-color: #ffffff;
+        border: 2px solid #345A69;
 }
 
 .input-container label {
