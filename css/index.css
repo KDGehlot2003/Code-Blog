@@ -5,44 +5,47 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: #121f26;
 }
 
-.clip-path-container {
-    width: 100px; 
-    height: 100px; 
-    position: absolute;
-    overflow: hidden;
-}
-.content-flex-container {
+.flex-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding-top: 80px; 
-    gap: 20px; 
+    justify-content: space-between;
+    margin-top: 130px;
+
 }
-.clip-path-image {
-    margin: 0 20px; 
+
+.hexagon-container {
+    margin-right: 100px;
+    position: relative;
     width: 450px;
     height: 450px;
-    border-radius: 100% 54% 30% 100% / 11% 22% 78% 100%;
+    overflow: hidden;
+
 }
-.info{
+
+.hexagon-container img {
+    z-index: 100;
+    width: 100%;
+    display: block;
+    clip-path: url(#hexagon-clip-path);
+}
+
+.info {
+    margin-top: 30px;
+    margin-left: 100px;
     text-align: left;
-    margin-top:100px ;
-    margin-left:80px ;
     background: #121f26;
     padding: 20px;
     border-radius: 10px;
-    width: 400px; 
+    width: 400px;
 }
 
-.info p{
+.info p {
     color: #ffffff;
     padding-bottom: 70px;
 }
-
 
 nav {
     display: flex;
@@ -51,9 +54,9 @@ nav {
     align-items: center;
     padding: 10px 20px;
     background-color: #121f26;
-    position: fixed; /* Fix navbar to the top of the viewport */
-    top: 0; /* Position at the very top */
-    z-index: 1000; /* Ensure navbar is above other content */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -65,7 +68,7 @@ nav {
 }
 
 .logo img {
-    width: 40px; 
+    width: 40px;
     height: auto;
     margin-right: 10px;
 }
@@ -82,40 +85,15 @@ nav {
     cursor: pointer;
 }
 
-.auth-buttons button + button {
+.auth-buttons button+button {
     margin-left: 10px;
 }
 
 
-.clip-path-image {
-margin-top: 150px;
-margin-left: 820px;
-width: 450px;
-height: 450px;
-position: absolute;
-top: 0;
-left: 0;
-border-radius: 100% 54% 30% 100% / 11% 22% 78% 100%  ;
-}
-.index-main-flex{
-    display: flex;
-    justify-content: start;
-}
-
-.info{
-    text-align: left;
-    margin-top:100px ;
-    margin-left:80px ;
-    background: #121f26;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px; 
-}
-
 .hashtag {
     padding: 0.2rem;
     background-color: #224452;
-    color: #ffffff; 
+    color: #ffffff;
     width: 185px;
     border-radius: 2rem;
     font-size: 15.2px;
@@ -123,7 +101,7 @@ border-radius: 100% 54% 30% 100% / 11% 22% 78% 100%  ;
 }
 
 h1 {
-    color: #ffffff; 
+    color: #ffffff;
     font-size: 24px;
     margin-top: 10px;
 }
@@ -137,20 +115,21 @@ h1 {
 
 .buttons-container {
     display: flex;
-    width:190px;
+    width: 190px;
     height: 50px;
-    justify-content: space-evenly; 
-    align-items: center; 
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #5999B1;
-    border-radius: 3rem; 
+    border-radius: 3rem;
 
 }
 
-.explore-button, .subscribe-button {
+.explore-button,
+.subscribe-button {
     color: white;
     border: none;
     cursor: pointer;
-    margin: 0 5px; 
+    margin: 0 5px;
 }
 
 .explore-button {
@@ -160,49 +139,55 @@ h1 {
 }
 
 .subscribe-button {
-    padding: 0.5rem;
+    padding: 0.3rem;
     background-color: #224452;
-    width: 38px; 
-    height: 38px;
-    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-section{
-   height: 100vh;
+section {
+    height: 100vh;
 }
-.card-index{
-    margin-left: 12rem ;
+
+.card-index {
+    margin-left: 12rem;
     display: grid;
-    grid-template-columns: 15rem 15rem 15rem 15rem  ;
-    
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+
 }
-.card-image{
+
+.card-image {
     border-radius: 1rem;
     background-color: #224452;
     position: relative;
     margin: 1rem;
-    border: #ffffff  solid 1px;
-    height:  16.341rem;
-    
+    border: #ffffff solid 1px;
+    height: 16.341rem;
+
 
 }
-.card-image img{
+
+.card-image img {
     border-radius: 1rem 1rem 0rem 0rem;
     height: 8.5rem;
     width: 12.9rem;
 }
-.topic-name{
+
+.topic-name {
     color: #ffffff;
     padding: 0.5rem;
 
 }
-.p-blog{
+
+.p-blog {
     color: #ffffff;
     margin-left: 5rem;
     font-size: 28.1px;
     font-weight: 600;
 }
-.explore-btn button{
+
+.explore-btn button {
     color: #ffffff;
     background: transparent;
     border: none;
@@ -211,22 +196,24 @@ section{
     padding: 0.2rem 0.4rem 0.2rem 0.4rem;
     cursor: pointer;
     border-radius: 1rem;
-   
+
 
 }
-.explore-btn{
+
+.explore-btn {
     color: #ffffff;
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 65px;
-    margin: 0.4rem ;
+    margin: 0.4rem;
     border-radius: 5rem;
     text-align: center;
     transition: background-color 0.3s ease;
-    margin: 0rem 0.9rem 0.6rem 0rem; 
-   
+    margin: 0rem 0.9rem 0.6rem 0rem;
+
 }
+
 .explore-btn:hover {
-    background-color: #487a8c; 
+    background-color: #487a8c;
 }
