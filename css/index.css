@@ -230,3 +230,9 @@ section{
 .explore-btn:hover {
     background-color: #487a8c; 
 }
+
+.auth-buttons a ,.subscribe-button a{
+    text-decoration: none;
+    /* text-decoration-color: #ffffff; */
+    color: #ffffff;
+}

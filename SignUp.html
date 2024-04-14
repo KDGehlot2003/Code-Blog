@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="css/SignUp.css">
     <script src="login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        function openHome(){
+            window.location.href="home.html";
+        }
+    </script>
 </head>
 <body>
     <header class="site-header">
-        <img src="Images/cb-logo-4.webp" alt="CodeBlog Logo" style="width: 40px; height: 40px;">
+        <a href="index.html">
+            <img src="Images/logo1.png" alt="CodeBlog Logo" style="width: 40px; height: 40px;">
+        </a>
         <h1>CODE-BLOG</h1>
     </header>
     <section class="signup-section">
@@ -60,8 +67,8 @@
                 </div>
             </div>
             <div class="form-actions">
-                <button type="submit" class="submit-btn">Sign Up</button>
-                <button type="button" class="alternative-btn">Continue with Email</button>
+                <button onclick="openHome()" type="submit" class="submit-btn">Sign Up</button>
+                <button onclick="openHome()" type="button" class="alternative-btn">Continue with Email</button>
             </div>
         </form>
     </section>
