@@ -134,6 +134,7 @@ body {
     position: fixed;
     top:76.4px;
     right:0;
+    margin-right: 5rem;
     /* padding: ; */
     /* position: fixed; */
 }
@@ -280,12 +281,12 @@ body {
 
     /* cards section  */
     .card-index{
-        /* margin-left: 8rem ; */
-        /* margin: 0 auto; */
-        display: grid;
-        grid-template-columns: 15rem 15rem 15rem ;
-        margin: 0 auto;
-        margin-left:6.5rem
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center cards horizontally within the container */
+            gap: 10px; /* Space between cards */
+            width: 80%; /* You can adjust this as needed */
+            margin: 0 auto;
         
     }
     .card-image{

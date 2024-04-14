@@ -6,22 +6,27 @@
     <title>Code-Blog</title>
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        function openSearch(){
+            window.location.href="search.html";
+        }
+    </script>
 </head>
 <body>
     <header class="home-header" id="home-header">
         <nav class="home-navbar" id="home-navbar">
             <div class="home-navbar-left">
-                <a href="/" class="home-link">
+                <a href="home.html" class="home-link">
                     <img src="images/logo1.png" alt="Code-Blog logo">
                     <span class="CodeBlog-Name">CodeBlog</span>
                 </a>
             </div>
             <div class="home-navbar-center">
                 <ul class="home-nav-links">
-                    <li><a href="">Blogs</a></li>
+                    <li><a href="home.html">Blogs</a></li>
                     <li><a href="">Discussions</a></li>
                     <li><a href="">Uploads</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
                     <li><a href="">FAQs</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -32,7 +37,9 @@
                 </div>
 
                 <div class="home-navbar-right-profile">
-                    <img src="images/profile-photo.png" alt="profile">
+                    <a href="profile.html">
+                        <img src="images/profile-photo.png" alt="profile">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -42,7 +49,7 @@
         <section class="home-main-content-blogs">
             <div class="search-bar">
                 <input type="search" id="search" name="search" placeholder="Search Blogs" required>
-                <button type="submit" class="search-button"><img src="images/search.png" alt=""></button>
+                <button onclick="openSearch()" type="submit" class="search-button"><img src="images/search.png" alt=""></button>
             </div>
             <div class="card-index">
                 <div class="card-image">
