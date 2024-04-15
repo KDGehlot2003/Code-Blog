@@ -130,6 +130,7 @@ body {
 
 .rankings-section{
     flex: 0 0 35%;
+    max-width: 35vw;
     height: 100vh;
     position: fixed;
     top:76.4px;
@@ -154,7 +155,7 @@ body {
 
 .rank{
     text-align: center;
-    margin-right: 400rem;
+    /* margin-right: 400rem; */
 }
 
 .rankings-section-table-body a{
@@ -205,10 +206,8 @@ body {
     min-width: 20rem;
 }
 
-    /* table{
-        border-spacing: 2rem;
-    } */
-    .gap{
+
+.gap{
     /* background-color: #1c303a; */
     background-color: #15222D;
     margin-bottom: 0.4rem;
@@ -283,9 +282,9 @@ body {
     .card-index{
         display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center cards horizontally within the container */
+            /* justify-content: center; Center cards horizontally within the container */
             gap: 10px; /* Space between cards */
-            width: 80%; /* You can adjust this as needed */
+            width: 100%; /* You can adjust this as needed */
             margin: 0 auto;
         
     }
@@ -343,4 +342,23 @@ body {
     .explore-btn:hover {
         background-color: #487a8c; 
     }
+
+@media only screen and (max-width: 1149px) {
+    .rankings-section{
+        display: none;
+
+    }
+    .home-main-content{
+        display: block;
+    }
+    }
     
+@media only screen and (max-width:1225px){
+    .rankings-section{
+        max-width: 30vw;
+    }
+}  
+
+/* .home-main-content-blogs{
+    margin:0 auto;
+} */
