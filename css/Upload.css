@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #121f26;
+}
+/* Styling the header */
+.home-header {
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding around the navbar */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #121f26;
+}
+
+/* Navigation bar layout */
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home-navbar-left,
+.home-navbar-right,
+.home-navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; /* White text for the link */
+}
+
+.home-navbar-left img,
+.home-navbar-right img {
+    max-width: 50px; /* Adjust logo and icons size */
+    height: auto;
+}
+.home-navbar-right-notification img{
+    max-width: 24px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.home-navbar-right-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.CodeBlog-Name {
+    margin-left: 10px; /* Space between logo and site name */
+    font-weight: 600; /* Semi-bold for the site name */
+}
+
+/* Navigation links */
+.home-nav-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Space between links */
+}
+
+.home-nav-links a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: 400; /* Regular font weight for links */
+}
+
+.home-nav-links a:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-navbar-center {
+        display: none; /* Hide center links on smaller screens */
+    }
+
+    .home-navbar {
+        justify-content: space-between;
+    }
+}
+
+/* Additional responsive or specific styles can go here */
+
+.home-nav-links li {
+    margin-right: 20px; /* Adds space to the right of each link */
+}
+
+.home-nav-links li:last-child {
+    margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
+}
+
+.main-container{
+    margin-top: 15vh;
+}.p-blog{
+    text-align: left;
+}
+
+/* cards section  */
+.card-index{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center cards horizontally within the container */
+        gap: 10px; /* Space between cards */
+        width: 80%; /* You can adjust this as needed */
+        margin: 0 auto;
+    
+}
+.card-image{
+    border-radius: 1rem;
+    background-color: #224452;
+    position: relative;
+    margin: 1rem;
+    border: #ffffff  solid 1px;
+    height:  16.341rem;
+    
+
+}
+.card-image img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 8.5rem;
+    width: 12.9rem;
+}
+.topic-name{
+    color: #ffffff;
+    padding: 0.5rem;
+
+}
+.p-blog{
+    color: #ffffff;
+    margin-left: 5rem;
+    font-size: 28.1px;
+    font-weight: 600;
+}
+.explore-btn button{
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    width: 70px;
+    background-color: #5999B1;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+   
+
+}
+.explore-btn{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    width: 65px;
+    margin: 0.4rem ;
+    border-radius: 5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0rem 0.9rem 0.6rem 0rem; 
+   
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
