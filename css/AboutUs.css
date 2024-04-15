@@ -112,7 +112,7 @@ body {
 }
 
 section{
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .heading-aboutus{
@@ -120,49 +120,77 @@ section{
 }
 
 .quote h2{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .content{
     text-align: justify;
-    margin:10px 0px 80px 80px;
-    /* margin-left:80px ; */
+    margin: 10px 0px 80px;
     padding: 20px;
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     font-size: large; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .socialmedia-links{
-    margin: 150px 0px 10px 55px;
+    margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
-    width: 500px;
-    height: 100px;
+    max-width: 500px;
+    width: 90%;
+    height: 50px;
 }
-.socialmedia-links .linkedin,.github,.twitter,.insta{
+
+.socialmedia-links .linkedin, .github, .twitter, .insta{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-size: cover;
 }
-.linkedin img,.github img,.twitter img,.insta img{
-    width: 50px;
-    height: 50px;
+
+.linkedin img, .github img, .twitter img, .insta img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
-.leftside-content{
-    width: 660px;
+
+.leftside-content {
+    width: 100%;
+    max-width: 660px;
+    flex: 1;
+    max-width: 50%;
 }
-.rightside-content{
+
+.rightside-content {
     margin-top: 50px;
+    text-align: center;
+    flex: 1;
+    max-width: 50%;
 }
-.rightside-content img{
-    margin-left: 150px;
-    width: 450px;
-    height: 350px;
+
+.rightside-content img {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 60%;
+    height: 65%;
     border-radius: 10px;
 }
 
 .total-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .total-content {
+        flex-direction: column;
+    }
+
+    .leftside-content,
+    .rightside-content {
+        max-width: 100%;
+    }
 }
