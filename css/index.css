@@ -12,6 +12,7 @@ body {
 .flex-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20vh;
     margin-left: 8vw;
     margin-right: 8vw;
@@ -19,9 +20,10 @@ body {
 }
 
 .hexagon-container {
+
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 35vw;
+    height: 35vw;
     overflow: hidden;
 
 }
@@ -38,7 +40,7 @@ body {
     background: #121f26;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 35vw;
 }
 
 .info p {
