@@ -44,17 +44,20 @@ html, body {
     object-fit: cover; 
 }
 
-.logo img {
-    display: none;
-    border-radius:  30%;
-    margin-right: 10px;
-    margin-bottom: 30px;
-}
-
-.logo {
+.logo a {
+    font-size:medium;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.logo img {
+    margin-top: -30px;
+    width: 40px;
+    height: 40px;
 }
 
 .form-header h1,  .input-container, .input-container input, .input-container label, .password-container img, button, .signin-btn, .email-btn, .register-prompt, .register-prompt a {
