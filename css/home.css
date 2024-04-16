@@ -156,7 +156,9 @@ body {
 .rank{
     text-align: center;
     /* margin-right: 400rem; */
+
 }
+
 
 .rankings-section-table-body a{
     text-decoration:none;
@@ -362,3 +364,10 @@ body {
 /* .home-main-content-blogs{
     margin:0 auto;
 } */
+
+.rank gap{
+    background-color: #121f26;
+}
+.dots p{
+    margin: 0;
+}
