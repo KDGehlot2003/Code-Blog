@@ -12,15 +12,18 @@ body {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 130px;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
 
 }
 
 .hexagon-container {
-    margin-right: 100px;
+
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 35vw;
+    height: 35vw;
     overflow: hidden;
 
 }
@@ -33,13 +36,11 @@ body {
 }
 
 .info {
-    margin-top: 30px;
-    margin-left: 100px;
     text-align: left;
     background: #121f26;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 35vw;
 }
 
 .info p {
@@ -60,9 +61,9 @@ nav {
 }
 
 .logo {
-    font-weight: 800;
+    /* font-weight: 800; */
     color: white;
-    font-size: 40px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
 }
@@ -129,20 +130,20 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    margin: 0 5px;
 }
 
 .explore-button {
     padding: 35px;
     text-decoration: none;
     transition: background-color 0.3s;
+    cursor:pointer;
 }
 
 .subscribe-button {
     padding: 0.3rem;
     background-color: #224452;
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 50%;
 }
 
@@ -150,7 +151,76 @@ section {
     height: 100vh;
 }
 
-.card-index {
+
+    /* cards section  */
+    .card-index{
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center cards horizontally within the container */
+            gap: 10px; /* Space between cards */
+            width: 80%; /* You can adjust this as needed */
+            margin: 0 auto;
+        
+    }
+    .card-image{
+        border-radius: 1rem;
+        background-color: #224452;
+        position: relative;
+        margin: 1rem;
+        border: #ffffff  solid 1px;
+        height:  16.341rem;
+        
+    
+    }
+    .card-image img{
+        border-radius: 1rem 1rem 0rem 0rem;
+        height: 8.5rem;
+        width: 12.9rem;
+    }
+    .topic-name{
+        color: #ffffff;
+        padding: 0.5rem;
+    
+    }
+    .p-blog{
+        color: #ffffff;
+        margin-left: 5rem;
+        font-size: 28.1px;
+        font-weight: 600;
+    }
+    .explore-btn button{
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        width: 70px;
+        background-color: #5999B1;
+        padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+        cursor: pointer;
+        border-radius: 1rem;
+       
+    
+    }
+    .explore-btn{
+        color: #ffffff;
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
+        width: 65px;
+        margin: 0.4rem ;
+        border-radius: 5rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin: 0rem 0.9rem 0.6rem 0rem; 
+       
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    
+
+/* .card-index {
     margin-left: 12rem;
     display: grid;
     grid-template-columns: 15rem 15rem 15rem 15rem;
@@ -214,10 +284,7 @@ section {
 
 }
 
-.explore-btn:hover {
-    background-color: #487a8c;
-}
 .buttons-container a , .auth-buttons a{
     text-decoration: none;
     color:#fff;
-}
+} */

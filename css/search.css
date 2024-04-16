@@ -114,7 +114,7 @@ body {
 .search-main-content {
     margin-top: 76.4px;
     display: flex;
-    height: 100vh;
+    min-height: 90vh;
     /* align-items: center; */
     justify-content: center;
 }

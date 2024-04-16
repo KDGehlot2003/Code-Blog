@@ -1,18 +1,13 @@
-/* Reset some basic elements */
-*,
-*::before,
-*::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
     background-color: #121f26;
-    color: white;
 }
-
 /* Styling the header */
 .home-header {
     color: #fff; /* White text color */
@@ -111,88 +106,74 @@ body {
     margin-right: 0; /* Ensures the last item doesn't have extra space on the right */
 }
 
-section{
-    margin-top: 90px;
+.main-container{
+    margin-top: 15vh;
+}.p-blog{
+    text-align: left;
 }
 
-.heading-aboutus{
-    margin-left: 30px;
-}
-
-.quote h2{
-    text-align: center;
-}
-
-.content{
-    text-align: justify;
-    margin: 10px 0px 80px;
-    padding: 20px;
-    max-width: 600px;
-    width: 90%;
-    font-size: large; 
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.socialmedia-links{
-    margin: 5rem auto;
-    /* margin-top: 5rem; */
+/* cards section  */
+.card-index{
     display: flex;
-    justify-content: space-evenly;
-    max-width: 500px;
-    width: 90%;
-    height: 50px;
+        flex-wrap: wrap;
+        justify-content: center; /* Center cards horizontally within the container */
+        gap: 10px; /* Space between cards */
+        width: 80%; /* You can adjust this as needed */
+        margin: 0 auto;
+    
 }
+.card-image{
+    border-radius: 1rem;
+    background-color: #224452;
+    position: relative;
+    margin: 1rem;
+    border: #ffffff  solid 1px;
+    height:  16.341rem;
+    
 
-.socialmedia-links .linkedin, .github, .twitter, .insta{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-size: cover;
 }
-
-.linkedin img, .github img, .twitter img, .insta img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.card-image img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 8.5rem;
+    width: 12.9rem;
 }
+.topic-name{
+    color: #ffffff;
+    padding: 0.5rem;
 
-.leftside-content {
-    width: 100%;
-    max-width: 660px;
-    flex: 1;
-    max-width: 50%;
 }
+.p-blog{
+    color: #ffffff;
+    margin-left: 5rem;
+    font-size: 28.1px;
+    font-weight: 600;
+}
+.explore-btn button{
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    width: 70px;
+    background-color: #5999B1;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+   
 
-.rightside-content {
-    margin-top: 50px;
+}
+.explore-btn{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    width: 65px;
+    margin: 0.4rem ;
+    border-radius: 5rem;
     text-align: center;
-    flex: 1;
-    max-width: 50%;
+    transition: background-color 0.3s ease;
+    margin: 0rem 0.9rem 0.6rem 0rem; 
+   
 }
-
-.rightside-content img {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.total-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10vh;
-}
-
-@media (max-width: 768px) {
-    .total-content {
-        flex-direction: column;
-    }
-
-    .leftside-content,
-    .rightside-content {
-        max-width: 100%;
-    }
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
