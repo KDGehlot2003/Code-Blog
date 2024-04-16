@@ -135,7 +135,8 @@ section{
 }
 
 .socialmedia-links{
-    margin: 30px auto;
+    margin: 5rem auto;
+    /* margin-top: 5rem; */
     display: flex;
     justify-content: space-evenly;
     max-width: 500px;
@@ -174,7 +175,7 @@ section{
     margin: 0 auto;
     max-width: 100%;
     width: 60%;
-    height: 65%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -182,6 +183,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 10vh;
 }
 
 @media (max-width: 768px) {
