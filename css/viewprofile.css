@@ -291,3 +291,72 @@ body {
     }
 
 }
+
+
+.card-index{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* justify-content: center; Center cards horizontally within the container */
+        gap: 10px; /* Space between cards */
+        width: 100%; /* You can adjust this as needed */
+        margin: 0 auto;
+    
+}
+.card-image{
+    border-radius: 1rem;
+    background-color: #224452;
+    position: relative;
+    margin: 1rem;
+    border: #ffffff  solid 1px;
+    height:  16.341rem;
+    
+
+}
+.card-image img{
+    border-radius: 1rem 1rem 0rem 0rem;
+    height: 8.5rem;
+    width: 12.9rem;
+}
+.topic-name{
+    color: #ffffff;
+    padding: 0.5rem;
+    background-color: #224452;
+
+}
+.p-blog{
+    color: #ffffff;
+    margin-left: 5rem;
+    font-size: 28.1px;
+    font-weight: 600;
+}
+.explore-btn button{
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    width: 70px;
+    background-color: #5999B1;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+   
+
+}
+.explore-btn{
+    color: #ffffff;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    width: 65px;
+    margin: 0.4rem ;
+    border-radius: 5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0rem 0.9rem 0.6rem 0rem; 
+   
+}
+.explore-btn:hover {
+    background-color: #487a8c; 
+}
+
+
