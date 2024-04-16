@@ -130,6 +130,7 @@ body {
 }
 
 .form_div form{
+    position: relative;
     width: 80%;
     height: 80%;
     display: flex;
@@ -161,6 +162,8 @@ body {
     border: 1px solid white;
     /* padding: 10px; */
 }
+
+
 
 .form_div form button{
     width: 15%;
