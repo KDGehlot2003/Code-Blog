@@ -116,6 +116,7 @@ body {
 
 .main_div{
     height: 80vh ;
+    margin-top: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -198,6 +199,7 @@ body {
 
 .icons{
     width: 350px;
+    margin-bottom: 2rem ;
     display: flex;
     align-items: center;
 }
