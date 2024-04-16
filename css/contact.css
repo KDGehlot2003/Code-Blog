@@ -116,6 +116,7 @@ body {
 
 .main_div{
     height: 80vh ;
+    margin-top: 13vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -174,7 +175,7 @@ body {
 }
 
 .content_div{
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin-right: 15vw;
     display: flex;
