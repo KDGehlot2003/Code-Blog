@@ -14,8 +14,8 @@ body {
 
 /* Styling the header */
 .home-header {
-    color: #fff; /* White text color */
-    padding: 10px 0; /* Padding around the navbar */
+    color: #fff; 
+    padding: 10px 0; 
     z-index: 100;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@ body {
     background-color: #121f26;
 }
 
-/* Navigation bar layout */
+
 .home-navbar {
     display: flex;
     justify-content: space-between;
@@ -44,12 +44,12 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff; /* White text for the link */
+    color: #fff; 
 }
 
 .home-navbar-left img,
 .home-navbar-right img {
-    max-width: 50px; /* Adjust logo and icons size */
+    max-width: 50px; 
     height: auto;
 }
 .home-navbar-right-notification img{
@@ -66,17 +66,17 @@ body {
 }
 
 .CodeBlog-Name {
-    margin-left: 10px; /* Space between logo and site name */
-    font-weight: 600; /* Semi-bold for the site name */
+    margin-left: 10px; 
+    font-weight: 600; 
 }
 
 /* Navigation links */
 .home-nav-links {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Align links horizontally */
-    gap: 20px; /* Space between links */
+    display: flex; 
+    gap: 20px;
 }
 
 .home-nav-links a {
