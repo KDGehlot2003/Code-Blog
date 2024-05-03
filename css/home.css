@@ -324,6 +324,7 @@ body {
             margin: 0 auto;
         
     }
+    
     .card-image{
         border-radius: 1rem;
         background-color: #224452;
@@ -339,6 +340,9 @@ body {
         height: 8.5rem;
         width: 12.9rem;
     }
+    /* .card-image:hover{
+        transform:scale(1.1);
+    } */
     .topic-name{
         color: #ffffff;
         padding: 0.5rem;
