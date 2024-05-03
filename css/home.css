@@ -65,8 +65,11 @@ body {
     object-fit: cover;
     cursor: pointer;
 }
-.dropdownProfile{
-    display: none;
+.dropdownProfile {
+    visibility: hidden; /* Hide dropdown initially */
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above the original position */
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, transform 0.5s ease; /* Coordinated transition */
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -75,16 +78,23 @@ body {
     right: 1.5%;
 }
 
+.dropdownProfile.active {
+    visibility: visible; /* Make dropdown visible */
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+    transition-delay: 0s; /* Apply transitions without delay when becoming visible */
+}
+
 .dropdownProfile::before {
     content: "";
     position: absolute;
-    top: -10px; /* Adjust this value to position the arrow right above the menu */
-    right: 10px; /* Adjust this to align with the icon */
+    top: -10px;
+    right: 10px;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent; /* Creates the left part of the arrow */
-    border-right: 10px solid transparent; /* Creates the right part of the arrow */
-    border-bottom: 10px solid #f9f9f9; /* The color should match the dropdown background */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f9f9f9;
 }
 
 .dropdownProfile a {
@@ -93,10 +103,10 @@ body {
     text-decoration: none;
     display: block;
 }
+
 .dropdownProfile a:hover {
     background-color: #f1f1f1;
 }
-
 
 
 .CodeBlog-Name {
