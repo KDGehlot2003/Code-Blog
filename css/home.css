@@ -332,6 +332,8 @@ body {
             gap: 10px; /* Space between cards */
             width: 100%; /* You can adjust this as needed */
             margin: 0 auto;
+            transition: opacity 0.5s ease-out;
+            opacity: 1;
         
     }
     
@@ -418,4 +420,33 @@ body {
 }
 .dots p{
     margin: 0;
+}
+
+/* for transition effect  */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    display: none;
+}
+
+/* for notification  */
+.notifications-dropdown {
+    visibility: hidden; /* Hide dropdown initially */
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above the original position */
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, transform 0.5s ease; /* Coordinated transition */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 1.5%;
+    margin-right: 6rem;
+}
+
+.notifications-dropdown.active {
+    visibility: visible; /* Make dropdown visible */
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+    transition-delay: 0s; /* Apply transitions without delay when becoming visible */
 }
