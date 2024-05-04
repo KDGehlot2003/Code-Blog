@@ -120,3 +120,44 @@ function showResults() {
         }, 10); // slight delay to ensure it starts visible
     }, 500); // match this with the CSS transition time
 }
+
+
+
+// notification dropdown 
+
+
+function toggleNotificationsDropdown(event) {
+    event.preventDefault(); // Stop the anchor tag from causing page jump
+    var notificationsDropdown = document.getElementById('notificationsDropdown');
+    
+    // Toggle visibility and manage transitions
+    if (notificationsDropdown.style.display === 'none' || notificationsDropdown.style.display === '') {
+        notificationsDropdown.style.display = 'block';
+        notificationsDropdown.style.opacity = '1';
+        notificationsDropdown.style.transform = 'translateY(0)';
+        notificationsDropdown.style.visibility = 'visible';
+    } else {
+        notificationsDropdown.style.opacity = '0';
+        notificationsDropdown.style.transform = 'translateY(-20px)';
+        // Delay hiding the dropdown to allow the opacity transition to finish
+        setTimeout(function() {
+            notificationsDropdown.style.display = 'none';
+            notificationsDropdown.style.visibility = 'hidden';
+        }, 500); // Match this timeout to your CSS transition time
+    }
+
+    event.stopPropagation(); // Prevent click event from propagating to the document
+}
+
+// Add this script inside your HTML or linked JavaScript file to handle clicking outside the dropdown
+document.addEventListener('click', function(event) {
+    var notificationsDropdown = document.getElementById('notificationsDropdown');
+    if (!event.target.closest('#notificationButton') && notificationsDropdown.style.display === 'block') {
+        notificationsDropdown.style.opacity = '0';
+        notificationsDropdown.style.transform = 'translateY(-20px)';
+        setTimeout(function() {
+            notificationsDropdown.style.display = 'none';
+            notificationsDropdown.style.visibility = 'hidden';
+        }, 500); // Ensure this matches the CSS transition
+    }
+});

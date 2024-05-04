@@ -6,11 +6,6 @@
     <title>Code-Blog</title>
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        // function openSearch(){
-        //     window.location.href="search.html";
-        // }
-    </script>
 </head>
 <body>
     <header class="home-header" id="home-header">
@@ -33,7 +28,16 @@
             </div>
             <div class="home-navbar-right">
                 <div class="home-navbar-right-notification">
-                    <img src="images/notification.png" alt="">
+                    <a href="" id="notificationButton" onclick="toggleNotificationsDropdown(event)" class="notification-button">
+                        <img src="images/notification.png" alt="">
+                    </a>
+                    <div class="notifications-dropdown" id="notificationsDropdown" style="display: none; color: black;">
+                        <!-- Sample notifications content -->
+                        <div class="notification-item">You have 3 new messages.</div>
+                        <div class="notification-item">Your post has 5 new comments.</div>
+                        <div class="notification-item">You got 5 likes.</div>
+                        <!-- Add more notification items as needed -->
+                    </div>
                 </div>
 
                 <div class="home-navbar-right-profile">
