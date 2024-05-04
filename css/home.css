@@ -332,6 +332,8 @@ body {
             gap: 10px; /* Space between cards */
             width: 100%; /* You can adjust this as needed */
             margin: 0 auto;
+            transition: opacity 0.5s ease-out;
+            opacity: 1;
         
     }
     
@@ -418,4 +420,11 @@ body {
 }
 .dots p{
     margin: 0;
+}
+
+/* for transition effect  */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    display: none;
 }

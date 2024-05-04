@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script>
-        function openSearch(){
-            window.location.href="search.html";
-        }
+        // function openSearch(){
+        //     window.location.href="search.html";
+        // }
     </script>
 </head>
 <body>
@@ -55,7 +55,8 @@
                 <input type="search" id="search" name="search" placeholder="Search Blogs" required>
                 <button onclick="openSearch()" type="submit" class="search-button"><img src="images/search.png" alt=""></button>
             </div>
-            <div class="card-index">
+            <div class="card-index" id="result" style="display: none;"></div>
+            <div class="card-index" id="topblogs">
                 <div class="card-image">
                     <img src="images/BlogData/binary search.png" alt="">
                     <div class="card-topic">

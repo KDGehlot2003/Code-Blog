@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    const mainContent = document.querySelector('.home-main-content'); // Assuming this is a parent that exists at load
+
+    // Delegate hover events for card images
+    mainContent.addEventListener('mouseenter', function(event) {
+        if (event.target.closest('.card-image')) {
+            const card = event.target.closest('.card-image');
+            card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0px 4px 8px rgba(0, 0, 0, 0.1)';
+        }
+    }, true);
+
+    mainContent.addEventListener('mouseleave', function(event) {
+        if (event.target.closest('.card-image')) {
+            const card = event.target.closest('.card-image');
+            card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = 'none';
+        }
+    }, true);
+    
+
+
     const imgIcon = document.getElementById('imgIcon');
     const profileDrop = document.getElementById('profileDrop');
 
@@ -64,3 +88,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// for search 
+function openSearch() {
+    fetch('search-results.html') // Path to your HTML file with the search results
+        .then(response => response.text()) // Get the response text
+        .then(html => {
+            document.getElementById('result').innerHTML = html; // Insert the HTML
+            showResults();
+        })
+        .catch(error => console.error('Error loading the search results:', error));
+}
+
+function showResults() {
+    let oldContent = document.getElementById('topblogs');
+    let newContent = document.getElementById('result');
+
+    // Fade out old content
+    oldContent.style.opacity = '0';
+    setTimeout(() => {
+        oldContent.style.display = 'none';
+
+        // Ensure new content is styled for display
+        newContent.style.display = 'flex';
+        newContent.style.opacity = '0';
+
+        // Fade in new content
+        setTimeout(() => {
+            newContent.style.opacity = '1';
+        }, 10); // slight delay to ensure it starts visible
+    }, 500); // match this with the CSS transition time
+}
