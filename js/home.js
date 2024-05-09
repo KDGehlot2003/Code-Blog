@@ -161,3 +161,25 @@ document.addEventListener('click', function(event) {
         }, 500); // Ensure this matches the CSS transition
     }
 });
+// JavaScript to toggle the dropdown menu when clicking the "Sort" button
+document.addEventListener("DOMContentLoaded", function(event) {
+    let sortBtn = document.getElementById("sortBtn");
+    let sortDrop = document.getElementById("sortDrop");
+
+    sortBtn.addEventListener("click", function() {
+        if (sortDrop.style.display === "none") {
+            sortDrop.style.display = "block";
+        } else {
+            sortDrop.style.display = "none";
+        }
+    });
+});
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    let sortBtn = document.getElementById("sortBtn");
+    let sortDrop = document.getElementById("sortDrop");
+    if (!event.target.matches('#sortBtn') && !event.target.matches('.dropdownSort')) {
+        sortDrop.style.display = "none";
+    }
+}
