@@ -120,8 +120,9 @@ body{
     color: white;
 }
 .fac-1 {
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-around; */
     font-size: 20px;
 }
 .fac-1-main{
@@ -187,3 +188,18 @@ a{
     color: #fff;
 }
 
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-title {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+  }
