@@ -10,12 +10,17 @@
     <header class="home-header" id="home-header">
         <nav class="home-navbar" id="home-navbar">
             <div class="home-navbar-left">
+                <div class="sidebar" id="sidebar" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <a href="home.html" class="home-link">
                     <img src="images/logo1.png" alt="Code-Blog logo">
                     <span class="CodeBlog-Name">CodeBlog</span>
                 </a>
             </div>
-            <div class="home-navbar-center">
+            <div class="home-navbar-center" id="home-navbar-center">
                 <ul class="home-nav-links">
                     <li><a href="home.html">Blogs</a></li>
                     <li><a href="">Discussions</a></li>
@@ -38,7 +43,7 @@
             </div>
         </nav>
     </header>
-    <div class="main_div">
+    <div class="main_div" id="main_div">
         <div class="form_div">
             <form action="#" method="#">
                 <label for="name">Name:</label>
@@ -58,6 +63,21 @@
             <div class="icons"><img src="images/location.svg"><p>Vadodara, Gujarat</p></div>
         </div>
     </div>
+
+    <script>
+        function show(){
+            const sidebar=document.getElementById("home-navbar-center");
+            const main=document.getElementById("main_div");
+            if(sidebar.style.display==="none"){
+                sidebar.style.display="block";
+                main.style.marginLeft="25vw";
+            }else{
+                sidebar.style.display="none";
+                main.style.marginLeft="0";
+
+            }
+        }
+    </script>
 </body>
 </html>
 <!-- #5999B1 -->
