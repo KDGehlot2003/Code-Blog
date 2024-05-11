@@ -2,6 +2,9 @@ body{
     background-color: #121F26;
     color: white;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* nav */
 
