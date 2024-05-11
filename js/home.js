@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Hover effect in rank table
-    var tableRows = document.querySelectorAll(".ranking-section-table-row");
+    const tableRows = document.querySelectorAll(".ranking-section-table-row");
     tableRows.forEach(function(row) {
-        var cells = Array.from(row.cells).slice(1);
+        const cells = Array.from(row.cells).slice(1);
         cells.forEach(function(cell) {
-            var gapDiv = cell.querySelector(".gap");
+            const gapDiv = cell.querySelector(".gap");
             if (gapDiv) {
                 gapDiv.addEventListener("mouseenter", function() {
                     this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
@@ -102,8 +102,8 @@ function openSearch() {
 }
 
 function showResults() {
-    let oldContent = document.getElementById('topblogs');
-    let newContent = document.getElementById('result');
+    const oldContent = document.getElementById('topblogs');
+    const newContent = document.getElementById('result');
 
     // Fade out old content
     oldContent.style.opacity = '0';
@@ -128,7 +128,7 @@ function showResults() {
 
 function toggleNotificationsDropdown(event) {
     event.preventDefault(); // Stop the anchor tag from causing page jump
-    var notificationsDropdown = document.getElementById('notificationsDropdown');
+    const notificationsDropdown = document.getElementById('notificationsDropdown');
     
     // Toggle visibility and manage transitions
     if (notificationsDropdown.style.display === 'none' || notificationsDropdown.style.display === '') {
@@ -151,7 +151,7 @@ function toggleNotificationsDropdown(event) {
 
 // Add this script inside your HTML or linked JavaScript file to handle clicking outside the dropdown
 document.addEventListener('click', function(event) {
-    var notificationsDropdown = document.getElementById('notificationsDropdown');
+    const notificationsDropdown = document.getElementById('notificationsDropdown');
     if (!event.target.closest('#notificationButton') && notificationsDropdown.style.display === 'block') {
         notificationsDropdown.style.opacity = '0';
         notificationsDropdown.style.transform = 'translateY(-20px)';
@@ -163,8 +163,8 @@ document.addEventListener('click', function(event) {
 });
 // JavaScript to toggle the dropdown menu when clicking the "Sort" button
 document.addEventListener("DOMContentLoaded", function(event) {
-    let sortBtn = document.getElementById("sortBtn");
-    let sortDrop = document.getElementById("sortDrop");
+    const sortBtn = document.getElementById("sortBtn");
+    const sortDrop = document.getElementById("sortDrop");
 
     sortBtn.addEventListener("click", function() {
         if (sortDrop.style.display === "none") {
@@ -177,8 +177,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-    let sortBtn = document.getElementById("sortBtn");
-    let sortDrop = document.getElementById("sortDrop");
+    const sortBtn = document.getElementById("sortBtn");
+    const sortDrop = document.getElementById("sortDrop");
     if (!event.target.matches('#sortBtn') && !event.target.matches('.dropdownSort')) {
         sortDrop.style.display = "none";
     }
