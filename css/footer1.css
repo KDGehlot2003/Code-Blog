@@ -147,6 +147,13 @@ background-color: #345A69;;
         margin: 10px; 
   }
   
+@media (min-width: 768px) {
+    section .ccopyright{
+        display: none;
+    }
+    
+
+}  
 @media (max-width: 768px) {
 .footer-div1, .footer-div2 {
     width: 100%; 
